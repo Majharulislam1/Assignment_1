@@ -52,14 +52,16 @@ nav {
     opacity: 0.8;
 }
 
-.hero_content>button {
+.hero_content>button >a{
     background-color: #0D1321;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
+
 
 .hero_section {
     background-image: url("./assets/Hero-bg.png");
@@ -126,18 +128,22 @@ nav {
 }
 
 .inspiration_section,
-.target_text {
+.target_text,
+.learning_heading {
     text-align: center;
 
 }
 
 .inspiration_section,
-.target_text h2 {
+.target_text,
+.learning_heading h2 {
     margin-bottom: 15px;
 }
 
 .inspiration_section,
-.target_text p {
+.target_text,
+.learning_heading,
+p {
     color: rgb(13, 19, 33);
     font-size: 12px;
     margin-bottom: 30px;
@@ -202,7 +208,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     gap: 20px;
 }
 
@@ -213,4 +219,107 @@ nav {
     text-underline-offset: 8px;
     cursor: pointer;
     background: none;
+}
+
+.learning_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.learning_img {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.learning_text p {
+    color: rgb(13, 19, 33);
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.learning_text button {
+    border: none;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    cursor: pointer;
+    background: none;
+    margin: 15px 0px;
+}
+
+.subscribe_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subscribe_txt {
+    text-align: center;
+}
+
+.subscribe_txt h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.subscribe_txt p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.subscribe_txt input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+
+.subscribe_txt input[type="button"] {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    cursor: pointer;
+}
+
+.subscribe_txt input[type="text"]:focus{
+    outline: none;
+}
+
+.subscribe_section{
+    border-radius: 16px;
+    background-image: url('./assets/handshake.jpg'),linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));;
+    padding: 64px 48px 64px 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+.footer_section{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 0px;
+}
+
+footer{
+     background: rgba(13, 19, 33, 0.03);
+}
+
+.footer_img a{
+    text-decoration: none;
 }
